@@ -1,0 +1,14 @@
+<div>
+    <mt-header title="详情" :fixed="true">
+        <router-link to="/questions" slot="left">
+        <mt-button icon="back">返回</mt-button>
+        </router-link>
+        <mt-button icon="more" slot="right"></mt-button>
+    </mt-header>
+    <div class="qa-detail">
+    <h1 class="qa-title">{{ title }}</h1>
+    <div class="qa-content">
+        {{ content }}
+    </div>
+    </div>
+</div>

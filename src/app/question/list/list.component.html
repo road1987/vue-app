@@ -1,0 +1,24 @@
+ <div class="qa-list">
+      <mt-header title="所有问题" :fixed="true">
+        <mt-button  slot="left" @click="showSideMenu()">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </mt-button>
+        <router-link to="questions/search" slot="right">
+          <mt-button icon="search"  class="margin-left"></mt-button>
+        </router-link>
+        <mt-button icon="more" slot="right" class="margin-left"></mt-button>
+      </mt-header>
+
+      <div class="qa-item" v-for="item in questions">
+        <router-link to="question-detail">
+          <h1 class="qa-title">{{ item.title }}</h1>
+          <div class="qa-content">
+            <span class="date">{{ item.createDate }}</span>
+            {{ item.content }}
+          </div>
+        </router-link>
+      </div>
+      <router-link to="question-create" class="btn-edit">+</router-link>
+
+      <router-view></router-view>
+  </div>

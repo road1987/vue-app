@@ -1,0 +1,29 @@
+.qa-search-modal{
+  width : 100%;
+  position: absolute;
+  top : 0px;
+  bottom : 0px;
+  background: #ffffff;
+  z-index: 10000;
+  overflow: hidden;
+
+  .search-bar{
+    background : #eeeeee;
+    padding : 10px;
+    padding-left : 40px;
+
+    .go-back{
+      position : absolute;
+      left : 15px;
+      top : 15px;
+    }
+    .search-input{
+      width : 100%;
+      height : 30px;
+      padding : 5px;
+      border-radius: 10px;
+      border : 1px solid #eeeeee;
+      outline: none;
+    }
+  }
+}

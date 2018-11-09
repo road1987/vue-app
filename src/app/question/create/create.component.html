@@ -1,0 +1,16 @@
+
+  <div class="qa-create">
+      <mt-header title="问题记录" :fixed="true">
+          <router-link to="/questions" slot="left">
+            <mt-button icon="back">返回</mt-button>
+          </router-link>
+          <mt-button icon="more" slot="right"></mt-button>
+      </mt-header>
+      <form class="qa-create-form" >
+          <mt-field class="margin-top input-field" placeholder="问题" type="textarea" rows="2" v-model="title"></mt-field>
+          <mt-field class="margin-top input-field" placeholder="记录下回答" type="textarea" rows="4" v-modal="content"></mt-field>
+          <div class="toolbar-bottom">
+            <mt-button class="width-100" type="primary" @click="doCreateQuestion">创建</mt-button>
+          </div>
+      </form>
+  </div>

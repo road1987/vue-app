@@ -1,0 +1,26 @@
+<div id="app">
+    <div class="side-menu" :class="{show : isShowSideMenu , hide : !isShowSideMenu}">
+        <div class="header">
+            <div class="avatar"><img src="" alt=""/></div>
+            <div class="account"><a href="">bee0873@gmail.com</a></div>
+        </div>
+        <div class="body">
+            <div class="menu-item">
+                <i class="item-icon fa fa-quora" aria-hidden="true"></i>
+                所有问题
+            </div>
+            <div class="menu-item">
+                <i class="item-icon fa fa-tag" aria-hidden="true"></i>
+                问题标签
+            </div>
+            <div class="menu-item"></div>
+        </div>
+    </div>
+    <div class="side-menu-mask" 
+        :class="{show : isShowSideMenu , hide : !isShowSideMenu}"
+        @click="hideSideMenu()">
+    </div>
+    <!--<transition>-->
+        <router-view></router-view>
+    <!--</transition>-->
+</div>

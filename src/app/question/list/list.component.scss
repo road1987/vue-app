@@ -1,0 +1,56 @@
+   .qa-list{
+     padding : 40px 0px 0px 0px;
+   }
+   
+   .qa-item{
+     font-size : 14px;
+     border : 1px solid #ffffff;
+     border-bottom : 1px solid #eeeeee;
+   }
+
+   .qa-item a{
+     text-decoration : none;
+     padding : 12px;
+     display : block;
+   }
+
+   .qa-item a, .qa-item a:visited, .qa-item a:hover, .qa-item a:active {
+      color: inherit;
+   }
+
+   .qa-item:hover{
+     background : #EFF8FE;
+     border : 1px solid #C3E5F5;
+   }
+
+   .qa-item h1.qa-title{
+     font-size : 16px;
+     margin : 0px 0px 8px 0px;
+   }
+
+   .qa-item div.qa-content{
+     font-size : 14px;
+     color : #999999;
+   }
+
+   .qa-item div.qa-content span.date{
+     color : #8FCBE7;
+     font-size : 14px;
+   }
+   
+   .btn-edit{
+     width : 50px;
+     height : 50px;
+     line-height : 50px;
+     position:fixed;
+     bottom : 10px;
+     right : 10px;
+     text-align: center;
+     font-weight: bold;
+     font-size : 20px;
+     background : #26a2ff;
+     border-radius: 50%;
+     color : white;
+     cursor: pointer;
+     text-decoration: none;
+   }
